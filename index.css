@@ -72,6 +72,8 @@
   }
 
   .text p {
+    font-family:"IBM Plex Sans", sans-serif;
+    font-weight: normal;
     font-size: 2vw;
   }
 
