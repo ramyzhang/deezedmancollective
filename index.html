@@ -124,6 +124,9 @@
   }
 </style>
 
+
+
+
 </head>
 
 <body style="display:none;">
@@ -150,7 +153,39 @@
     <p style="animation-delay: 0.6s;">The DMC’s debut single titled “For You” is available on all major streaming platforms and they are currently working on their first album.
        Catch them on Instagram at <a href="https://www.instagram.com/deezedmancollective/?hl=en">@deezedmancollective</a> and <a href="https://www.facebook.com/deezedmancollective/">Facebook</a> to keep up with further updates.</p>
   </div>
-  <script type="text/javascript">const fs = 3.95;</script>
-  <script type="text/javascript" src="https://temper.jonaspelzer.com/assets/js/watermark.js"></script>
+  <script type="text/javascript">const fs = 4;</script>
+  <!-- <script type="text/javascript" src="https://temper.jonaspelzer.com/assets/js/watermark.js"></script> -->
+  <script> 
+
+    document.getElementsByTagName('style')[0].style.display = "none";
+    document.getElementsByTagName('body')[0].style.display = "block";
+    
+    var watermark = document.createElement("p");
+    var watermarklink = document.createElement("a");
+    var watermarklinkspan = document.createElement("span");
+    var watermarklinkspantext = document.createTextNode("");
+    watermarklink.setAttribute("href", "http://temper.jonaspelzer.com");
+    watermarklink.setAttribute("target", "_blank");
+    watermarklink.appendChild(watermarklinkspan);
+    watermarklinkspan.appendChild(watermarklinkspantext);
+    watermark.appendChild(watermarklink);
+    watermark.classList.add("watermark");
+    document.getElementsByClassName("text")[0].appendChild(watermark);
+    var paragraphs = document.getElementsByTagName("p").length;
+      
+      document.getElementsByTagName('style')[0].innerHTML +=
+      '.text {display: block !important}' +
+      '.watermark {display: block !important; visibility: visible !important; text-indent: 0 !important; position: static !important; font-size: inherit !important; line-height: inherit !important; animation: fadein .2s ' + (paragraphs+1)/10 + 's forwards ease-out !important; opacity: 0;} ' +
+      '@media(max-width:700px) {.watermark {font-size: inherit !important; line-height: inherit !important}}'
+      ;
+      
+      if (fs > 3.49) {
+        document.getElementsByTagName('style')[0].innerHTML +=
+        '.text {display: block !important}' +
+        '.watermark {font-size:' + fs/2 + 'vw !important; line-height:' + fs/2 + 'vw !important;}' +
+        '@media(max-width:700px) {.watermark {font-size: inherit !important; line-height: inherit !important}}'
+      ;
+      }
+    </script>
 </body>
 </html>
