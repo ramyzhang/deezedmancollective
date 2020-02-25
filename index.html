@@ -8,7 +8,6 @@
   <link class="googlefont" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="index.css" style="display:block">
 
-
 <!-- TODO: clean this up later -->
 <style>
 </style>
@@ -16,34 +15,34 @@
 </head>
 
 <body style="display:none;">
-  <div class="text">
-    <div class="splash">
-      <img src="IMG_2968_compressed.jpg">
-      <h1 class="center" style="animation-delay: 0.1s;"><mark>Deezed Man Collective</mark></h1>
+  <div class="nestedbody">
+    <div class="text">
+      <h1 style="animation-delay: 0.1s;"><mark>Deezed Man Collective</mark></h1>
+      <img src="DMC.gif">
+      <div class="nav" style="animation-delay: 0.2s;">
+        <a href="index.html">About</a>
+        <a href="music.html">Music</a>
+        <!-- TODO: add video link-->
+        <!-- <a href="videos.link">Videos</a> -->
+        <a href="contact.html">Contact</a>
+      </div>
+      <p style="animation-delay: 0.3s;">The Deezed Man Collective (DMC) is a <mark>music collective</mark> born on the suburban outskirts of Toronto, Ontario.
+        Influenced by an <mark>eclectic and groovy fusion</mark> of rock, blues, jazz, R&B, pop, and a dash of progressive metal, our <mark>fresh sound</mark> can get any crowd to jam along.</p>
+      <p style="animation-delay: 0.4s;">Members of the DMC have performed at the <b>Beaches International Jazz Festival</b>, toured throughout <b>China</b>, and performed at events across Southern Ontario - most recently for the <b>2019 Aurora Winter Festival at Ontario Place</b>.</p>
+      <p style="animation-delay: 0.5s;">The DMC’s debut single titled <mark><a href="https://open.spotify.com/artist/35aKMPGOUbxuRqbQ65LvL9">For You</a></mark> is available on all major streaming platforms, and we're currently working on our first album.
+         Catch us on Instagram <mark><a href="https://www.instagram.com/deezedmancollective/?hl=en">@deezedmancollective</a></mark> and <mark><a href="https://www.facebook.com/deezedmancollective/">Facebook</a></mark> to keep up with further updates.</p>
+      <h1 style="animation-delay: 0.6s;">Before they were deezed...</h1>
+      <p style="animation-delay: 0.7s;">It all started in the mid-2000s, when childhood friends Anthony Nufrio (guitar & vocals), Matthew Reyes (drums), and Kyle Palmer (bass) picked up their first instrument in grade school music class.
+        Starting with favorite songs, then slowly fiddling with soundtracks, the group had developed an amazing chemistry together. </p>
+      <p style="animation-delay: 0.8s;">But college and university put them on separate paths for years, until the trio finally reunited in 2019.
+        Joined by talented friends they made along the way - Ramy Zhang (vocals) and John Salazar (keys) - they’re picking up where they left off, and are ready to make some real good music.</p>
     </div>
-    <div class="nav" style="animation-delay: 0.2s;">
-      <a href="https://open.spotify.com/artist/35aKMPGOUbxuRqbQ65LvL9">Music</a>
-      
-      <!-- TODO: add video link-->
-      <a href="videos.com">Videos</a> 
-      <a href="mailto:deezedmancollective@gmail.com">Contact</a>
-    </div>
-    <p style="animation-delay: 0.3s;">The Deezed Man Collective (DMC) is a music collective born on the suburban outskirts of Toronto, Ontario. 
-      Influenced by an eclectic and groovy fusion of rock, blues, jazz, R&B, pop, and a dash of progressive metal, their fresh sound can get any crowd to jam along.</p>
-    <p style="animation-delay: 0.4s;">Both individually and separately, members of the DMC have performed at the Beaches International Jazz Festival, toured throughout China, and performed at events across Southern Ontario - most recently for the CNE’s 2019 Aurora Winter Festival at Ontario Place.</p>
-    <h1 style="animation-delay: 0.5s;">Before they were deezed...</h1>
-    <p style="animation-delay: 0.6s;">It all started in the mid-2000s, when childhood friends Anthony Nufrio (guitar & vocals), Matthew Reyes (drums), and Kyle Palmer (bass) picked up their first instrument in grade school music class. 
-      Starting with favorite songs, then slowly fiddling with soundtracks, the group had developed an amazing chemistry together. </p>
-    <p style="animation-delay: 0.6s;">But college and university put them on separate paths for years, until the trio finally reunited in 2019. 
-      Joined by talented friends they made along the way - Ramy Zhang (vocals) and John Salazar (keys) - they’re picking up where they left off.</p>
-    <p style="animation-delay: 0.6s;">The DMC’s debut single titled “For You” is available on all major streaming platforms and they are currently working on their first album.
-       Catch them on Instagram <a href="https://www.instagram.com/deezedmancollective/?hl=en">@deezedmancollective</a> and <a href="https://www.facebook.com/deezedmancollective/">Facebook</a> to keep up with further updates.</p>
   </div>
   <script type="text/javascript">const fs = 4;</script>
-  <script> 
+  <script>
     document.getElementsByTagName('style')[0].style.display = "none";
     document.getElementsByTagName('body')[0].style.display = "block";
-    
+
     var watermark = document.createElement("p");
     var watermarklink = document.createElement("a");
     var watermarklinkspan = document.createElement("span");
@@ -56,13 +55,13 @@
     watermark.classList.add("watermark");
     document.getElementsByClassName("text")[0].appendChild(watermark);
     var paragraphs = document.getElementsByTagName("p").length;
-      
+
       document.getElementsByTagName('style')[0].innerHTML +=
       '.text {display: block !important}' +
       '.watermark {display: block !important; visibility: visible !important; text-indent: 0 !important; position: static !important; font-size: inherit !important; line-height: inherit !important; animation: fadein .2s ' + (paragraphs+1)/10 + 's forwards ease-out !important; opacity: 0;} ' +
       '@media(max-width:700px) {.watermark {font-size: inherit !important; line-height: inherit !important}}'
       ;
-      
+
       if (fs > 3.49) {
         document.getElementsByTagName('style')[0].innerHTML +=
         '.text {display: block !important}' +

@@ -7,33 +7,48 @@
   }
 
   body {
-    background: #fefff0;
+    /* background: #fefff0; */
+    background-image: url("IMG_2968_compressed.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
     color: #4b77be;
     width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  b {
+    font-weight: bold;
   }
 
   img {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 91%;
     height: auto;
   }
 
   mark {
-    background-color: #fefff0;
-    color: #4b77be;
-    opacity: 0.95;
+    background-color: rgba(201, 171, 135, 0.5);
   }
 
   /* PAGE */
   .text {
     font-family:"IBM Plex Mono", sans-serif;
         display: none;
-
-    line-height: 3.95vw;
-        font-weight: bold;
-            font-variant-ligatures: normal;
   }
 
-  .splash {
+  .nestedbody {
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: 1.5%;
+  }
+
+  /* .splash {
     position: relative;
     text-align: center;
   }
@@ -45,17 +60,19 @@
     transform: translate(-50%, -50%);
     text-color: #4b77be;
     white-space: nowrap;
-  }
+  } */
 
   h1 {
-    font: inherit;
-    line-height: inherit;
+    line-height: 3.95vw;
+        font-weight: bold;
+            font-variant-ligatures: normal;
     letter-spacing: inherit;
     font-size: 3.95vw;
+    color: #251A1E;
   }
 
   .nav {
-    background-color: #fefff0;
+    /* background-color: #fefff0; */
     opacity: 0;
     animation: fadein .2s forwards ease-out;
     padding: 1.58vw 10vw 2.37vw 3vw;
@@ -69,18 +86,20 @@
     opacity: 0;
     animation: fadein .2s forwards ease-out;
     padding: 1.58vw 10vw 2.37vw 3vw;
+    color: #251A1E;
   }
 
   .text p {
-    font-family:"IBM Plex Sans", sans-serif;
+    font-family:"IBM Plex Mono", sans-serif;
     font-weight: normal;
     font-size: 2vw;
+    line-height: 2vw;
   }
 
   .text a {
     text-decoration: underline;
     text-decoration-skip: ink;
-    color: inherit;
+    color: #251A1E;
     padding-left: .5vw;
     padding-right: .5vw;
     margin-left: -.5vw;
